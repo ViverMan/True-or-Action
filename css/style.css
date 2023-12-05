@@ -1,0 +1,316 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+/*--------------------*/
+.btn {
+  box-sizing: border-box;
+  padding: 12px 60px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  background: rgb(255, 246, 150);
+  opacity: 0.8;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.section-outer {
+  padding: 0 10px;
+}
+
+.section-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.section-inner--wide {
+  max-width: 1200px;
+}
+
+.section-header {
+  position: fixed;
+  background-color: #8389ff;
+  padding: 12px 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  opacity: 0.8;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-navigation .section-header-logo a {
+  color: #fff;
+}
+.header-navigation .section-header-logo a:hover {
+  border-bottom: 2px solid #ffaf03;
+  transition: 0.5s;
+}
+.header-navigation .nav {
+  margin-left: auto;
+}
+.header-navigation .nav-wrapper {
+  display: flex;
+}
+.header-navigation .nav-wrapper__item .btn-rulles {
+  background: none;
+  color: #fff;
+}
+.header-navigation .nav-wrapper__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.section-main {
+  background-image: url("../img/devushka3.jpg");
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 50px;
+  color: white;
+}
+.section-main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section-main-content-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-main-content-text h2 {
+  font-size: clamp(20px, 5vw, 30px);
+  margin-bottom: 20px;
+}
+@media (max-height: 400px) {
+  .section-main-content-text h2 {
+    margin-bottom: 10px;
+  }
+}
+.section-main-content-text h1 {
+  font-size: clamp(35px, 5vw, 50px);
+  margin-bottom: 20px;
+}
+@media (max-height: 400px) {
+  .section-main-content-text h1 {
+    margin-bottom: 10px;
+  }
+}
+.section-main-content-text p {
+  font-size: clamp(20px, 5vw, 30px);
+  font-weight: 600;
+}
+@media (max-height: 400px) {
+  .section-main-content-text {
+    margin-bottom: 10px;
+  }
+}
+.section-main-content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.section-main-content-wrapper-card:hover {
+  box-shadow: 0 0 5px rgb(250, 230, 99), 0 0 20px rgb(255, 248, 40), 0 0 15px rgb(237, 250, 63), 0 0 20px rgb(255, 240, 35);
+}
+.section-main-content-wrapper-card {
+  position: relative;
+  transition: 0.2s;
+  border-radius: 5%;
+  width: 100%;
+}
+@media (max-height: 700px) {
+  .section-main-content-wrapper-card {
+    width: 40%;
+  }
+}
+@media (max-height: 570px) {
+  .section-main-content-wrapper-card {
+    width: 20%;
+  }
+}
+@media (max-width: 320px) {
+  .section-main-content-wrapper-card {
+    width: 40%;
+  }
+}
+.section-main-content-wrapper-card .level {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+.section-main-content-wrapper-card .level-text {
+  font-size: clamp(20px, 5vw, 40px);
+  font-weight: 700;
+  padding: 0 10px;
+  color: #d04614;
+  border: 2px solid #ff6d38;
+}
+@media (max-height: 700px) {
+  .section-main-content-wrapper-card .level-text {
+    font-size: 20px;
+  }
+}
+@media (max-height: 570px) {
+  .section-main-content-wrapper-card .level-text {
+    font-size: 16px;
+  }
+}
+.section-main-content-wrapper-card .card-color-blue, .section-main-content-wrapper-card .card-color-red {
+  filter: blur(2px);
+  transition: 0.3s;
+}
+@media (max-width: 1919px) {
+  .section-main-content-wrapper-card .card-color-blue, .section-main-content-wrapper-card .card-color-red {
+    filter: none;
+  }
+}
+.section-main-content-wrapper-card .card-color-blue .img, .section-main-content-wrapper-card .card-color-red .img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.section-main-content-wrapper-card .card-color-blue:hover, .section-main-content-wrapper-card .card-color-red:hover {
+  filter: none;
+}
+.section-main-content-wrapper-card:not(:last-child) {
+  margin-right: 20px;
+}
+
+.modal-style {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-question {
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 50px;
+  color: white;
+}
+
+.question-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.question-content-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90vw;
+  max-width: 800px;
+  background-color: rgb(56, 77, 64);
+  opacity: 0.7;
+  border-radius: 10px;
+}
+.question-content-card .quest {
+  margin: 0 auto;
+  padding: 10px;
+}
+.question-content-card .quest .phrase, .question-content-card .quest .phrase2 {
+  font-size: clamp(25px, 5vw, 36px);
+  text-align: center;
+}
+.question-content .question-red {
+  background-color: rgb(255, 92, 119);
+}
+.question-content .question-blue {
+  background-color: rgb(0, 183, 255);
+}
+.question-content .question-content-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 20px;
+}
+.question-content .question-content-btn .btn:first-child {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */

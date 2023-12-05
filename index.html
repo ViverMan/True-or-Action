@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <title>Правда или Действие</title>
+</head>
+<body>
+    <header>
+        <section class="section-outer section-header">
+            <div class="section-inner section-inner--wide">
+                <div class="header-navigation">
+                    <div class="section-header-logo">
+                        <a href="./index.html">Правда или Действие</a>
+                    </div>
+                    <!-- <button class="btn-burger" aria-label="Toggle navigation">
+                        <span class="btn-burger__line"></span>
+                        <span class="btn-burger__line"></span>
+                        <span class="btn-burger__line"></span>
+                    </button> -->
+                    <nav class="nav">
+                        <ul class="nav-wrapper">
+                            <!-- <li class="nav-wrapper__item">
+                                <a href="#" class="nav-wrapper__item-link nav-wrapper__item-link--active">Home</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#" class="nav-wrapper__item-link">Blog</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#" class="nav-wrapper__item-link">Features</a>
+                            </li>
+                            <li class="nav-wrapper__item">
+                                <a href="#" class="nav-wrapper__item-link">Pricing</a>
+                            </li> -->
+                            <li class="nav-wrapper__item">
+                                <button class="btn-rulles" id="planYourTripBtn">Правила игры</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="section-outer section-main">
+            <div class="section-inner">
+                <div class="section-main-content">
+                    <div class="section-main-content-text">
+                        <h2>игра для взрослых</h2>
+                        <h1>Правда или Действие</h1>
+                        <p>выбери уровень сложности</p>
+                    </div>
+                    <div class="section-main-content-wrapper">
+                        <div class="section-main-content-wrapper-card normal">
+                            <div class="level">
+                                <a class="level-text _blue" href="./questions.html">NORMAL</a>
+                            </div>
+                            <a type="button" class="card-color-blue" id="card-blue" href="./questions.html">
+                                <img class="img" src="./img/normal-img1.png" width="391" height="442" alt="картинка">
+                            </a>
+                        </div>
+                        <div class="section-main-content-wrapper-card hot">
+                            <div class="level">
+                                <a class="level-text _red" href="./questions-hot.html">HOT</a>
+                            </div>
+                            <a type="button" class="card-color-red" id="card-red" href="./questions-hot.html">
+                                <img class="img" src="./img/hot-img1.png" width="391" height="442" alt="картинка">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class='content_for_modal platTripContent'>
+            <div class="modal-style">
+                <p>
+                    1. Игра 18+!
+                </p>
+                <p>
+                    2. Участие в игре добровольное!
+                </p>
+                <p>
+                    3. Сначала компания решает, с кого начнётся игра. Первого спрашивают: «Правда или действие?». Если игрок отвечает: «Правда», то он должен будет правдиво ответить на вопрос, который ему будет задан. Если он выбирает действие, то должен будет выполнить задание (совершить задаваемое ему действие).
+                </p>
+                <p>
+                    4. Наказание на выбор! Если игрок отказывается выполнить действие, снимает один любой предмет одежды или два других действия подряд.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
