@@ -259,8 +259,10 @@ body {
                         font-size: clamp(20px, 5vw, 40px);
                         font-weight: 700;
                         padding: 0 10px;
+                        text-shadow: rgb(14, 211, 255) 10px 5px 10px;
                         color: #d04614;
                         border: 2px solid #ff6d38;
+                        border-radius: 5%;
                         
                         @media (max-height: 700px) {
                             font-size: 20px;
