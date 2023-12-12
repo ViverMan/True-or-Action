@@ -159,7 +159,7 @@ body {
 .section-main-content-text {
   text-align: center;
   margin-bottom: 20px;
-  text-shadow: -1px -1px 0 #8389ff, -2px -2px 1px #8389ff;
+  text-shadow: -1px -1px 0 #8389ff, -1px -1px 1px #8389ff;
 }
 .section-main-content-text h2 {
   font-size: clamp(20px, 5vw, 30px);
@@ -227,7 +227,7 @@ body {
   font-size: clamp(20px, 5vw, 40px);
   font-weight: 700;
   padding: 0 10px;
-  text-shadow: 0 0 2px #fff, -1px -1px 0 #8389ff, -2px -2px 1px #8389ff, -2px -2px 2px hsl(0, 11%, 15%);
+  text-shadow: 0 0 2px #fff, -1px -1px 0 #8389ff, -1px -1px 1px #8389ff, -1px -1px 1px hsl(0, 11%, 15%);
   color: #d04614;
   border: 2px solid #ff6d38;
   border-radius: 5%;
