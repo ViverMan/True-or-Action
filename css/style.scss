@@ -260,10 +260,7 @@ body {
                         font-size: clamp(20px, 5vw, 40px);
                         font-weight: 700;
                         padding: 0 10px;
-                        text-shadow: 0 0 2px #fff, 
-                            -1px -1px 0 #8389ff,
-                            -1px -1px 1px #8389ff,
-                            -1px -1px 1px hsl(0, 11%, 15%);
+                        text-shadow: 2px 2px 2px #8389ff;
                         color: #d04614;
                         border: 2px solid #ff6d38;
                         border-radius: 5%;
