@@ -254,6 +254,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 5%;
+  box-shadow: 3px 3px 10px 0px rgb(203, 203, 203);
 }
 .section-main-content-wrapper-card .card-color-blue:hover, .section-main-content-wrapper-card .card-color-red:hover {
   filter: none;

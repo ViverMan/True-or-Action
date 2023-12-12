@@ -3,6 +3,7 @@ import { phrases3, phrases4 } from "./question-hot.js";
 let phrase2 = document.querySelector('.phrase2');
 
 const but3 = document.querySelector('.btn-true-hot');
+if (but3) {
   but3.addEventListener('click', function() {
 
     let element = document.querySelector('.question-content-card');
@@ -12,8 +13,10 @@ const but3 = document.querySelector('.btn-true-hot');
     let rand = phrases3.splice(Math.floor(Math.random() * phrases3.length), 1);
     phrase2.innerText = rand;
   });
+}
 
 const but4 = document.querySelector('.btn-action-hot');
+if (but4) {
   but4.addEventListener('click', function() {
 
     let element = document.querySelector('.question-content-card');
@@ -22,7 +25,8 @@ const but4 = document.querySelector('.btn-action-hot');
 
     let rand = phrases4.splice(Math.floor(Math.random() * phrases4.length), 1);
     phrase2.innerText = rand;
-  });  
+  });
+}  
 // -------- / hot --------- //
 
 
