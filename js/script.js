@@ -12,8 +12,13 @@ if (but) {
 
     let rand = phrases.splice(Math.floor(Math.random() * phrases.length), 1);
     phrase.innerText = rand;
+
+    if (rand == '') {
+      phrase.innerText = 'Все вопросы закончились, пожалуйста, перезагрузите страницу';
+    }
   });
 }
+
 const but2 = document.querySelector('.btn-action-norm');
 if (but2) {
   but2.addEventListener('click', function() {
@@ -24,6 +29,10 @@ if (but2) {
 
     let rand = phrases2.splice(Math.floor(Math.random() * phrases2.length), 1);
     phrase.innerText = rand;
+
+    if (rand == '') {
+      phrase.innerText = 'Все вопросы закончились, пожалуйста, перезагрузите страницу';
+    }
   });
 }  
 // -------- / norma --------- //

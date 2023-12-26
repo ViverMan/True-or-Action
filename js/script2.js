@@ -12,6 +12,10 @@ if (but3) {
 
     let rand = phrases3.splice(Math.floor(Math.random() * phrases3.length), 1);
     phrase2.innerText = rand;
+
+    if (rand == '') {
+      phrase2.innerText = 'Все вопросы закончились, пожалуйста, перезагрузите страницу';
+    }
   });
 }
 
@@ -25,6 +29,10 @@ if (but4) {
 
     let rand = phrases4.splice(Math.floor(Math.random() * phrases4.length), 1);
     phrase2.innerText = rand;
+
+    if (rand == '') {
+      phrase2.innerText = 'Все вопросы закончились, пожалуйста, перезагрузите страницу';
+    }
   });
 }  
 // -------- / hot --------- //
